@@ -9,6 +9,8 @@ env:
   - MOLECULE_IMG=centos:7
   - MOLECULE_IMG=ubuntu:xenial
   - MOLECULE_IMG=fedora:29
+  - MOLECULE_IMG=fedora:28
+  - MOLECULE_IMG=debian:jessie
 
 install:
   - pip install molecule docker
