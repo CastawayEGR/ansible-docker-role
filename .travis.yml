@@ -1,0 +1,17 @@
+---
+sudo: required
+language: python
+
+services:
+  - docker
+
+env:
+  - MOLECULE_IMG=centos:7
+  - MOLECULE_IMG=ubuntu:xenial
+  - MOLECULE_IMG=fedora:29
+
+install:
+  - pip install molecule docker
+
+script:
+  - molecule test
