@@ -12,17 +12,7 @@
 
 - name: Add docker-ce repo.
   apt_repository:
-<<<<<<< HEAD
-<<<<<<< HEAD
     repo: "deb [arch=amd64] https://download.docker.com/linux/{{ ansible_distribution|lower }} {{ ansible_distribution_release }} stable"
-=======
-=======
->>>>>>> c418f79e8f26e80800ef86e9e16637280f98206e
-    repo: >-
-      deb [arch=amd64] https://download.docker.com/
-      linux/{{ ansible_distribution|lower }}
-      {{ ansible_distribution_release }} stable
->>>>>>> c418f79e8f26e80800ef86e9e16637280f98206e
     state: present
 
 - name: Add docker-ce gpg key.
